@@ -1,17 +1,13 @@
-# Is statement 1
+puts "Let's have a lottery!!!"
+puts "Pick your first number"
+first_number = gets.chomp()
+puts "Pick your second number"
+second_number = gets.chomp()
+puts "Pick your third number"
+third_number = gets.chomp()
 
-puts "Select a stop light color"
-
-stop_light = gets.chomp()
-
-if stop_light == "red" || stop_light == "Red"
-  puts "stop"
-elsif stop_light == "yellow" || stop_light == "Yellow"
-  puts "Slow Down"
-elsif stop_light == "green" || stop_light == "Green"
-  puts "Go"
-elsif stop_light == ""
-  puts "You did not enter a color!!"
+if first_number == 33 && second_number == 45 && third_number == 74
+  puts "You won!"
 else
-  puts ( " #{stop_light} is not a stop light color")
+  puts "You lost"
 end
